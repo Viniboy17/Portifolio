@@ -1,0 +1,319 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#tudo{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px;
+}
+/*-------------Sobre mim---------------*/
+header{
+    width: 275px;
+    background-color: #1E1E1F;
+    height: 100%;
+    padding: 60px 30px;
+    border-radius: 20px;
+    border: 1px solid rgb(65, 64, 64);
+    overflow: hidden;
+    position: sticky;
+    top: 10px;
+}
+header>picture{
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 145px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.219);
+}
+header>picture>.minhafoto{
+   width: 100%;
+   height: 100%;
+}
+
+header>.meunome{
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+header>.ocupacao{
+    background-color: #2B2B2C;
+    width: 55%;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: small;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+hr{
+    border: 1px solid rgb(65, 64, 64);
+    margin-bottom: 30px;
+}
+
+.Email, .numero, .aniversario, .localizacao{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.iconedoscontatos{
+    box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.363);
+    border-radius: 10px;
+    padding: 10px;
+    width: 50px;
+    background-color: #202022;
+}
+
+.info{
+    width: 71%;
+}
+
+.contato_oq{
+    font-size: x-small;
+    color: #777777;
+    margin-bottom:5px ;
+}
+
+.oq-contato{
+    font-size: small;
+}
+
+/*------------------------Dados-------------------------*/
+main{
+    width: 900px;
+    overflow: hidden;
+    background-color: #1E1E1F;
+    height: 100%;
+    padding: 0px 30px;
+    border-radius: 20px;
+    border: 1px solid rgb(65, 64, 64);
+}
+
+/*Parte da navegação*/
+#navegacao{
+    width: 104%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+#navegacao>h1{
+    margin-top: 25px;
+    width: 37%;
+}
+
+.navgeral{
+    background-color: #272728;
+    padding: 20px 30px 20px 18px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 63%;
+    border-radius: 0px 0px 0px 20px;
+    border:1px solid rgb(65, 64, 64);
+}
+.navgeral>input{
+    display: none;
+}
+.navgeral>input:checked+.botaonavgeral{
+    color: #FEC663;
+}
+
+#navegacao>hr{
+    border-radius: 30px;
+    border: 3px solid #FEC663;
+    width: 5%;
+    margin-top: 25px;
+}
+
+.botaonavgeral{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botaonavgeral:hover{
+    color: #777777;
+}
+
+
+/*----------------------------------Sobre Mim-----------------------------------------*/
+
+.textosobremim{
+    width: 90%;
+    text-align: justify;
+}
+
+/*O que faço*/
+#oqfaco{
+    width: 103%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#oqfaco>h1{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.oqfaco{
+    display: flex;
+    flex-flow: row wrap;
+    width: 47%;
+    background-color: #222224;
+    border-radius: 20px;
+    border:1px solid rgb(65, 64, 64);
+    padding: 30px;
+    margin: 0px 20px 20px 0px;
+}
+
+.suboqfaco{
+    width: 78%;
+    margin-left: 26px;
+}
+
+.suboqfaco>h2{
+    margin-bottom: 5px;
+}
+
+/*clientes*/
+#clientes{
+    display: flex;
+    overflow-x: auto;
+    margin: 10px;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+#clientes::-webkit-scrollbar {
+    height: 10px;
+}
+
+#clientes::-webkit-scrollbar-track {
+    background: #4d4d50;
+    border-radius: 10px;
+}
+
+#clientes::-webkit-scrollbar-thumb {
+    background-color: #FEC663;
+    border-radius: 10px;
+}
+
+.clienteslogo>img{
+    width: 140px;
+    margin-right: 50px;
+}
+
+.clienteslogo::marker{
+    content: "";
+}
+
+/*------------------------------------------Portifolio--------------------------------*/
+#portifolio{
+    display: none;
+}
+/*navegador da pagina portifolio*/
+.navportifolio{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.botaonavport{
+    margin-right: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.botaonavport:hover{
+    color: #777777;
+}
+
+.navportifolio>input:checked+.botaonavport{
+    color: #FEC663;
+}
+
+.navportifolio>input{
+    display: none;
+}
+
+/*Todos os portifolios*/
+#all{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/*Os itens que fiz*/
+.landpagep{
+    width: 238px;
+    height: 185px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: #7777771f;
+}
+
+.landpage>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.landpagep:hover{
+    padding: 0px;
+}
+.landpage>img:hover{
+    width: 238px;
+    height: 185px ;
+}
+
+.qtipo{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.titulo{
+    font-weight: bold;
+    font-size: small;
+}
+
+.classe{
+    font-size: small;
+    color: #777777;
+}
+
+.classelandpage, .classeaplicacao, .classedeveloper{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.botaonavport.active{
+    color: #FEC663;
+}
+/*------------------------------------------Resumo--------------------------------*/
+#resumo{display: none;}
+/*------------------------------------------blog--------------------------------*/
+#blog{display: none;}
+/*------------------------------------------contact--------------------------------*/
+#contact{display: none;}
