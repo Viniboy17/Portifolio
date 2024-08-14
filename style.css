@@ -360,7 +360,7 @@ main{
         margin: -38px 0px 20px 124px;
         width: 42%;
     }
-    
+
     #hrdoheader{
         margin: 20px auto;
         width: 75%;
@@ -440,5 +440,9 @@ main{
         box-shadow: -1px -0px 0px #fec563;
         background-image: linear-gradient(138deg, #fec563ad, #202022, transparent);
         border: none;
+    }
+
+    .clienteslogo>img{
+        width: 70px;
     }
 }
