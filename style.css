@@ -317,3 +317,68 @@ main{
 #blog{display: none;}
 /*------------------------------------------contact--------------------------------*/
 #contact{display: none;}
+
+@media screen and (min-width:320px) and (max-width:667px){
+    #tudo{
+        padding: 0px;
+        flex-flow: column;
+    }
+
+    header{
+        width: 90%;
+        height: 115px;
+        padding: 15px;
+        position: relative;
+        border-radius: 20px;
+        margin: auto;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    header>picture{
+        margin: 0px;
+        border-radius: 20px;
+        width: 30%;
+        height: 82px;
+    }
+
+    header>.meunome{
+        margin-top: 10px;
+        width: 70%;
+    }
+
+    header>.ocupacao{
+        border-radius: 5px;
+        padding: 4px;
+        height: 22px;
+        margin: -38px 0px 20px 115px;
+        width: 42%;
+    }
+
+    #contato{
+        display: none;
+    }
+
+    main{
+        width: 90%;
+        border-radius: 0px;
+        margin:auto;
+        margin-top: 25px;
+        margin-bottom: 80px;
+        border-radius: 15px;
+        padding-bottom: 20px;
+    }
+    .oqfaco{
+        width: 100%;
+    }
+    .navgeral{
+        position: fixed;
+        top: 92%;
+        left: 0%;
+        width: 100%;
+        border-radius: 10px 10px 0px 1px;
+    }
+    .botaonavgeral{
+        margin-right: 14px;
+    }
+}
