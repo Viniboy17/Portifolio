@@ -105,7 +105,8 @@ document.getElementById('boataoall').addEventListener('click',function name(para
 //Botao no modo cll
 
 document.getElementById('botaocll').addEventListener('click',function name(params) {
-    if(contato.style.display=='none'){
+    var contatoDisplay = window.getComputedStyle(contato).display;
+    if(contatoDisplay==='none'){
         contato.style.display='block'
         hrdoheader.style.display='block'
     }else{
@@ -113,7 +114,4 @@ document.getElementById('botaocll').addEventListener('click',function name(param
         hrdoheader.style.display='none'
     }
 })
-
-
-
 

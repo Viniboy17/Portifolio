@@ -360,6 +360,7 @@ main{
         margin: -38px 0px 20px 124px;
         width: 42%;
     }
+    
     #hrdoheader{
         margin: 20px auto;
         width: 75%;
@@ -427,11 +428,17 @@ main{
         text-align: center;
         padding: 7px;
         width: 11%;
-        background-color: black;
+        background-color: #18181a;
         position: absolute;
-        left: 90%;
+        left: 89%;
         top: -1px;
-        border: 1px solid rgb(65, 64, 64);
+        border:1px solid rgb(65, 64, 64);
     }
 
+    #botaocll:hover{
+        overflow: hidden;
+        box-shadow: -1px -0px 0px #fec563;
+        background-image: linear-gradient(138deg, #fec563ad, #202022, transparent);
+        border: none;
+    }
 }
