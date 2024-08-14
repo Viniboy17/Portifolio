@@ -32,6 +32,10 @@ header{
     position: sticky;
     top: 10px;
 }
+
+#botaocll{
+    display: none;
+}
 header>picture{
     display: block;
     margin: auto;
@@ -112,6 +116,8 @@ main{
 }
 
 /*Parte da navegação*/
+
+#contact{display: none;}
 #navegacao{
     width: 104%;
     display: flex;
@@ -316,7 +322,7 @@ main{
 /*------------------------------------------blog--------------------------------*/
 #blog{display: none;}
 /*------------------------------------------contact--------------------------------*/
-#contact{display: none;}
+
 
 @media screen and (min-width:320px) and (max-width:667px){
     #tudo{
@@ -326,7 +332,7 @@ main{
 
     header{
         width: 90%;
-        height: 115px;
+        height: 100%;
         padding: 15px;
         position: relative;
         border-radius: 20px;
@@ -351,8 +357,13 @@ main{
         border-radius: 5px;
         padding: 4px;
         height: 22px;
-        margin: -38px 0px 20px 115px;
+        margin: -38px 0px 20px 124px;
         width: 42%;
+    }
+    #hrdoheader{
+        margin: 20px auto;
+        width: 75%;
+        display: none;
     }
 
     #contato{
@@ -371,14 +382,56 @@ main{
     .oqfaco{
         width: 100%;
     }
+
+    .suboqfaco{
+        margin-top: 20px;
+    }
     .navgeral{
         position: fixed;
-        top: 92%;
+        top: 90%;
         left: 0%;
         width: 100%;
         border-radius: 10px 10px 0px 1px;
     }
+
+    #navegacao>h1{
+        width: 70%;
+    }
+
+    #navegacao>hr{
+        width: 35%;
+        margin-top: 8px;
+    }
+
     .botaonavgeral{
         margin-right: 14px;
     }
+
+    .textosobremim{
+        width: 100%;
+    }
+
+    .oqfaco{
+        justify-content: center;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .botaonavport{
+        font-size: x-small;
+    }
+
+    #botaocll{
+        display: block;
+        cursor: pointer;
+        border-radius: 0px 0px 0px 10px;
+        text-align: center;
+        padding: 7px;
+        width: 11%;
+        background-color: black;
+        position: absolute;
+        left: 90%;
+        top: -1px;
+        border: 1px solid rgb(65, 64, 64);
+    }
+
 }

@@ -4,6 +4,8 @@ var portifolio = document.getElementById('portifolio')
 var resumo = document.getElementById('resumo')
 var blog = document.getElementById('blog')
 var contact = document.getElementById('contact')
+var contato = document.getElementById('contato')
+var hrdoheader = document.getElementById('hrdoheader')
 
 document.getElementById('botaosobre').addEventListener('click',function name(params) {
     sobremim.style.cssText='display:block; transition: 0.5s ease-in-out;'
@@ -99,6 +101,18 @@ document.getElementById('boataoall').addEventListener('click',function name(para
 })
 
 
+
+//Botao no modo cll
+
+document.getElementById('botaocll').addEventListener('click',function name(params) {
+    if(contato.style.display=='none'){
+        contato.style.display='block'
+        hrdoheader.style.display='block'
+    }else{
+        contato.style.display='none'
+        hrdoheader.style.display='none'
+    }
+})
 
 
 
