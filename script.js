@@ -5,7 +5,8 @@ var resumo = document.getElementById('resumo')
 var blog = document.getElementById('blog')
 var contact = document.getElementById('contact')
 var contato = document.getElementById('contato')
-var hrdoheader = document.getElementById('hrdoheader')
+var hrdoheader1 = document.getElementById('hrdoheader1')
+var hrdoheader2 = document.getElementById('hrdoheader2')
 
 document.getElementById('botaosobre').addEventListener('click',function name(params) {
     sobremim.style.cssText='display:block; transition: 0.5s ease-in-out;'
@@ -108,10 +109,12 @@ document.getElementById('botaocll').addEventListener('click',function name(param
     var contatoDisplay = window.getComputedStyle(contato).display;
     if(contatoDisplay==='none'){
         contato.style.display='block'
-        hrdoheader.style.display='block'
+        hrdoheader1.style.display='block'
+        hrdoheader2.style.display='block'
     }else{
         contato.style.display='none'
-        hrdoheader.style.display='none'
+        hrdoheader1.style.display='none'
+        hrdoheader2.style.display='none'
     }
 })
 
